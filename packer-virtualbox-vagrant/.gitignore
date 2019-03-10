@@ -1,8 +1,0 @@
-*.build
-*.vmdk
-*.tested
-*.uploaded
-*.released
-*.box.in/
-*.ovf
-*.SHA256SUM.gpg
