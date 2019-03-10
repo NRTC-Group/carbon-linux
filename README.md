@@ -1,8 +1,7 @@
-Templates for Debian VM images
-==============================
+CARBON LINUX
+============
 
-If you had some templates here please follow the following directory
-structure: buildername-virtualizationbackend-extrainfo
+FOCUS ON LEARNING MATERIAL SCIENCE
+----------------------------------
 
-See https://wiki.debian.org/Teams/Cloud/VagrantBaseBoxes for Vagrant with Virtualbox
-
+Carbon GNU/Linux is Virtual Machine box which have been Installed softwares related to Material Science in optimal way. You only need to download and it work out of the box like a charm!
