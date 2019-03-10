@@ -1,6 +1,9 @@
 #!/bin/bash
 
 set -e
+
+echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/99translations
+
 cat > /etc/apt/sources.list <<-EOF
 # Debian Main Repos
 
@@ -15,7 +18,5 @@ deb http://deb.debian.org/debian-debug stretch-backports-debug main contrib non-
 EOF
 
 apt-get update
-apt-get --yes upgrade
-apt-get --yes dist-upgrade
-apt-get --yes autoremove
-apt-get --yes clean
+apt --yes upgrade
+apt --yes dist-upgrade
