@@ -56,8 +56,10 @@
       ],
 
    "scripts": [
-           "scripts/vagrant-setup",
-           "scripts/vb-guest-additions.sh",
+           "scripts/set-apt-stretch.sh",
+           "scripts/vagrant.sh",
+	   "scripts/vb-guest-additions.sh"
+	   "scripts/cleanup.sh",
            "scripts/minimize.sh"
          ]
   }
