@@ -1,4 +1,6 @@
 # Clean up
+apt --yes purge gcc make linux-headers-amd64 
+apt --yes purge --autoremove 
 apt --yes autoremove
 apt --yes clean
 

@@ -17,6 +17,5 @@ deb http://deb.debian.org/debian-debug stretch-proposed-updates-debug main contr
 deb http://deb.debian.org/debian-debug stretch-backports-debug main contrib non-free
 EOF
 
-apt-get update
-apt --yes upgrade
+apt --yes update
 apt --yes dist-upgrade
