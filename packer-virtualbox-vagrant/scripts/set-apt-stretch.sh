@@ -2,6 +2,10 @@
 
 set -e
 
+# Debconf Dialog frontend does not work without a controlling terminal
+# We restore this in the end
+debconf-set-selections debconf debconf/frontend select Noninteractive
+
 echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/99translations
 
 cat > /etc/apt/sources.list <<-EOF

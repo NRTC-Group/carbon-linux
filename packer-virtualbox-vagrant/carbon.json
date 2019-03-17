@@ -37,6 +37,7 @@
       "ssh_wait_timeout": "10000s",
       "type": "virtualbox-iso",
       "iso_interface": "ide",
+      "guest_additions_mode": "attach",
       "hard_drive_interface": "sata",
       "guest_os_type": "Debian_64",
       "guest_additions_mode": "attach",
@@ -50,17 +51,14 @@
       "type": "shell",
       "pause_before": "5s",
       "execute_command": "echo 'vagrant'| {{.Vars}} sudo --preserve-env --stdin bash '{{.Path}}'",
-      "environment_vars": [
-         "VAGRANT_BUILDER_FS=/",
-         "VAGRANT_BUILDER_HOSTNAME=CARBON"
-      ],
 
    "scripts": [
+           "scripts/swap.sh",
            "scripts/set-apt-stretch.sh",
            "scripts/vagrant.sh",
 	   "scripts/vb-guest-additions.sh",
 	   "scripts/cleanup.sh",
-           "scripts/minimize.sh"
+           "scripts/space-reduction.sh"
          ]
   }
 ],
